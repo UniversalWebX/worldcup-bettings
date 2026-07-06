@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: worldcup-betting-sim
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: FOOTBALL_DATA_TOKEN
+        sync: false
+    disk:
+      name: data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1

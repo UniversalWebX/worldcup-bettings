@@ -17,7 +17,7 @@ const { Server } = require("socket.io");
 // Config
 // ---------------------------------------------------------------------------
 const PORT = process.env.PORT || 3000;
-const FOOTBALL_DATA_TOKEN = process.env.FOOTBALL_DATA_TOKEN || "";
+const FOOTBALL_DATA_TOKEN = process.env.FOOTBALL_DATA_TOKEN || "f64512120cb542218e5f23a9baa6e462";
 const COMPETITION_CODE = "WC"; // FIFA World Cup on football-data.org
 const API_BASE = "https://api.football-data.org/v4";
 const DB_FILE = path.join(__dirname, "data", "db.json");
